@@ -1,4 +1,7 @@
 spring:
+  application:
+    name: ms-gateway
+
   cloud:
     gateway:
       routes:
@@ -14,3 +17,5 @@ spring:
             - Path=/api/usuarios/**
           filters:
             - StripPrefix=2
+server:
+  port: 8090
